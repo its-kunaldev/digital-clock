@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Digital clock</title>
+</head>
+<body>
+    <div class="container">
+        <button id="reset">Reset</button>
+        <h1>Digital Clock</h1>
+        <button id="stopwatch">Stopwatch</button>
+        <p><span id="hour">00</span>hh: <span id="min"> 00</span>mm: <span id="sec"> 00</span>ss</p>
+    </div>
+    <div class="slider">
+        <h1>Stopwatch</h1>
+        <div class="circle">
+            <p><span id="stopHour">00</span>:<span id="stopMin">00</span>:<span id="stopSec">00</span></p>
+        </div>
+        <div class="btns">
+            <button class="startBtn">start</button>
+            <div class="twoBtns">
+                <button id="lap">Lap</button>
+                <button id="pause">Pause</button>
+            </div>
+        </div>
+        <ion-icon name="close" id="close"></ion-icon>
+
+        <div class="lap">
+            <ol id="orderList">
+                <!-- <li></li>
+                <li>sahil</li>
+                <li>10:20:25</li> -->
+            </ol>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
